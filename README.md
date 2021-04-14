@@ -25,4 +25,5 @@ Comparing face detection performance with DTCNN, dlib, Haar Cascades and DNN Ope
 - [Initial image classification technique RCNN](https://ganghee-lee.tistory.com/35)
 - [Initial image classification technique Fast RCNN](https://ganghee-lee.tistory.com/36)
 - [Initial image classification technique Faster RCNN](https://ganghee-lee.tistory.com/37)
+- [Compare code](https://www.kaggle.com/timesler/comparison-of-face-detection-packages)
 
