@@ -14,7 +14,8 @@ Comparing face detection performance with DTCNN, dlib, Haar Cascades and DNN Ope
 - [dlib code](https://github.com/1adrianb/face-alignment)
 - [dlib explain](https://medium.com/@jongdae.lim/%EA%B8%B0%EA%B3%84-%ED%95%99%EC%8A%B5-machine-learning-%EC%9D%80-%EC%A6%90%EA%B2%81%EB%8B%A4-part-4-63ed781eee3c)
 - [dlib public web site](https://github.com/davisking/dlib)
-- [Face landmark dlib with NN]
+- [Face landmark dlib with NN]   
+
 ## [Multi-task Cascaded Convolutional Nerual Network(MTCNN)]  
 - [68 Facial Landmark ](https://github.com/nicehuster/pytorch-facial-landmark)
 - 
