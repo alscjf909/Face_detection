@@ -9,12 +9,12 @@ from facenet_pytorch import MTCNN
 
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
-cap = cv2.VideoCapture('./input/test.mp4')
+cap = cv2.VideoCapture('../input/video2.mp4')
 est_FPS = 0
 
 face_detector = MTCNN(keep_all=True, device=device)
 
-video = mmcv.VideoReader('./input/test.mp4')
+video = mmcv.VideoReader('../input/video2.mp4')
 frames = [Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)) for frame in video]
 
 frames_tracked = []
@@ -43,7 +43,7 @@ print('\nDone')
 
 dim = frames_tracked[0].size
 fourcc = cv2.VideoWriter_fourcc(*'FMP4')    
-video_tracked = cv2.VideoWriter('video_tracked.mp4', fourcc, 25.0, dim,isColor=True)
+video_tracked = cv2.VideoWriter('video_rotate.mp4', fourcc, 25.0, dim,isColor=True)
 for frame in frames_tracked:
     video_tracked.write(cv2.cvtColor(np.array(frame), cv2.COLOR_RGB2BGR))
 video_tracked.release()

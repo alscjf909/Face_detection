@@ -22,10 +22,10 @@ JAWLINE = list(range(0, 17))
 
 detector = dlib.get_frontal_face_detector()
 
-vid_in = cv2.VideoCapture('./input/test.mp4')
+vid_in = cv2.VideoCapture('../input/video2.mp4')
 
 fourcc = cv2.VideoWriter_fourcc(*'FMP4')
-out = cv2.VideoWriter('dlib_tracked.mp4', fourcc, 20, (640, 480),isColor=True)
+out = cv2.VideoWriter('dlib_rotate.mp4', fourcc, 20, (640, 480),isColor=True)
 
 est_FPS = 0
 while True:

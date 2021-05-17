@@ -8,9 +8,9 @@ detector = dlib.cnn_face_detection_model_v1(sys.argv[1])
 
 
 ## 비디오 읽어오기 및 저장하기
-cap = cv2.VideoCapture('./input/test.mp4')
+cap = cv2.VideoCapture('../input/video2.mp4')
 fourcc = cv2.VideoWriter_fourcc(*'FMP4')
-out = cv2.VideoWriter('dlib_cnn_tracked.mp4', fourcc, 20, (640, 480),isColor=True)
+out = cv2.VideoWriter('dlib_cnn_rotate.mp4', fourcc, 20, (640, 480),isColor=True)
 
 # create list for landmarks
 ALL = list(range(0, 68))
